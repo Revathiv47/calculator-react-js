@@ -16,7 +16,7 @@ function App() {
 
   const calc = () => {
     try{
-        setResult(Number(eval(result).toString()));
+        setResult(Number(eval(result).toString()).toFixed(1));
     }
     catch{
         setResult('invalid');
